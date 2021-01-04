@@ -1,0 +1,22 @@
+@api = http://localhost:4000
+
+GET {{api}}/portfolio
+
+###
+GET {{api}}/portfolio/:id
+
+### creating video
+POST {{api}}/portfolio
+Content-Type: application/json
+
+{
+    "url":"behance.net/gallery/96293107/Afiches-ciclo-de-cine",
+    "title":"Ciclo de Cine",
+    "description":"Descripcion ciclo de cine"
+}
+
+###
+DELETE {{api}}/portfolio/:id
+
+###
+PUT {{api}}/portfolio/:id
